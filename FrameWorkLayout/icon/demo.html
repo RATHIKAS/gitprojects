@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid red;
+        }
+        .flexible-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            height: 200px;
+            font-size: 15px;
+            font-family: arial;
+        }
+
+        .fresher {
+            display: flex;
+            width: 250px;
+            gap: 15px;
+        }
+
+        .know-section {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .margin-property {
+            padding-left: 36px;
+            margin: 0;
+        }
+
+        .margin-ele {
+            margin: 0;
+        }
+
+        .font-property {
+            font-size: 13px;
+        }
+
+        .padding-items {
+            padding-top: 10px;
+            font-size: 13px;
+        }
+
+        .content {
+            padding: 0;
+            margin: 0;
+        }
+
+        .regular-property {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 120px;
+            height: 35px;
+        }
+
+        .Platform-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            width: 650px;
+            height: 280px;
+            box-shadow: 1px 3px 14px black;
+            /* border: 1px solid red; */
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .flexible {
+            width: 24px;
+            height: 24px;
+        }
+
+        .image-items {
+            height: 28px;
+            width: 28px;
+        }
+
+        .feature-items {
+            display: flex;
+            font-family: sans-serif;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .list-sections {
+            padding-left: 36px;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+            font-family: arial;
+            font-size: 12px;
+            row-gap: 16px;
+        }
+
+        .list-content {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .logo-container>ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            font-family: arial;
+        }
+
+        .logo-container {
+            width: 172px;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Platform-container">
+        <div class="flexible-container">
+            <div class="fresher">
+                <img alt="flexible-image" title="flexible-image" src="header-logo-image.png" class="flexible">
+                <div>
+                    <h4 class="margin-ele">Freshworks Neo</h4>
+                    <p class="margin-ele padding-items">Leverage a flexible, end-to-end, AI-powered enterprise platform
+                        to unify
+                        customer experiences</p>
+                </div>
+            </div>
+            <div class="know-section">
+                <div class="regular-property">
+                    <img alt="i-image" title="i-image" src="i-image.png" class="image-items">
+                    <h4 class="margin-ele">Know more</h4>
+                </div>
+                <p class="margin-property font-property">what's new?</p>
+                <p class="margin-property font-property">Blog</p>
+            </div>
+        </div>
+        <div class="feature-container">
+            <ul class="content">
+                <li>
+                    <a href="#" class="feature-items">
+                        <img alt="parashoot-image" title="parashoot-image" src="parashoot.svg">
+                        <h3 class="margin-ele">Features</h3>
+                    </a>
+                </li>
+                <div class="list-sections">
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Neo Admin Center</a></li>
+                    <li><a href="#">Collaboration</a></li>
+                    <li><a href="#">Events and Notifications</a></li>
+                    <li><a href="#">Unified Customer Record</a></li>
+                    <li><a href="#">Messaging channels</a></li>
+                    <li><a href="#">Custom Objects</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="logo-container">
+            <ul class="content">
+                <li>
+                    <a href="#" class="list-content">
+                        <img alt="marketplace-image" title="marketplace-image" src="marketplace-image.svg">
+                        <h4 class="margin-ele">Marketplace</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-content">
+                        <img alt="Developer-portal" title="Developer-portal" src="developer-portal-image.svg">
+                        <h4 class="margin-ele">Developer Portal</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-content">
+                        <img alt="Technology-image" title="Technology-image" src="rocket.svg" class="image-items">
+                        <h4 class="margin-ele">Technology Alliances</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-content">
+                        <img alt="customer-image" title="customer-image" src="champion.svg" class="image-items">
+                        <h4 class="margin-ele">Customer Spotlight</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-content">
+                        <img alt="Freddy-image" title="Freddy-image" src="pubby.svg">
+                        <h4 class="margin-ele">Freddy AI</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
